@@ -133,4 +133,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias config='/usr/bin/git --git-dir=/home/vfranco/dotfiles --work-tree=/home/vfranco'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
