@@ -23,7 +23,11 @@ set expandtab
 "highlight matches
 set hlsearch
 set incsearch
+"style settings
+set background=dark
+set t_Co=256
 "optional settings
 set cursorline
 set showcmd
 set ruler
+set foldmethod=marker
