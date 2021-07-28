@@ -20,6 +20,9 @@ set wildmode=longest:full,full
 set shiftwidth=4
 set tabstop=4
 set expandtab
+"highlight matches
+set hlsearch
+set incsearch
 "optional settings
 set cursorline
 set showcmd
