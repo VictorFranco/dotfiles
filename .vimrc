@@ -5,8 +5,10 @@
 "/_/  /_/\__, /     |___/___/_/  /_/_/ |_|\____/   
 "       /____/                                     
 "
+
 syntax on
-set tabstop=4
-filetype on
-set nu
-set ruler
+
+"line numbers
+set number
+set relativenumber
+set numberwidth=3
