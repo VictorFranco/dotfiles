@@ -7,6 +7,7 @@
 "
 
 syntax on
+set encoding=utf-8
 
 "line numbers
 set number
@@ -14,4 +15,12 @@ set relativenumber
 set numberwidth=3
 "wild menu
 set wildmenu
-set wildmode=list:longest,full
+set wildmode=longest:full,full
+"tabs to spaces
+set shiftwidth=4
+set tabstop=4
+set expandtab
+"optional settings
+set cursorline
+set showcmd
+set ruler
