@@ -31,3 +31,15 @@ set cursorline
 set showcmd
 set ruler
 set foldmethod=marker
+
+"-----------------------------------
+"            Plugins
+"-----------------------------------
+call plug#begin("~/.vim/plugged")
+
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
+"-----------------------------------
