@@ -12,3 +12,6 @@ syntax on
 set number
 set relativenumber
 set numberwidth=3
+"wild menu
+set wildmenu
+set wildmode=list:longest,full
