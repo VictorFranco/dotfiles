@@ -37,16 +37,28 @@ set foldmethod=marker
 "-----------------------------------
 call plug#begin("~/.vim/plugged")
 
+"theme
 Plug 'morhetz/gruvbox'
+"statusline
 Plug 'vim-airline/vim-airline'
+"git support
 Plug 'tpope/vim-fugitive'
+"explorer
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 "-----------------------------------
 
-"plugin settings
+"-----------------------------------
+"       plugin settings
+"-----------------------------------
+"theme
 let g:gruvbox_contrast_dark="hard"
 colorscheme gruvbox
+"statusline
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
+"explorer
+let NERDTreeQuitOnOpen=1
+nmap <space>nt :NERDTreeFind<cr>
