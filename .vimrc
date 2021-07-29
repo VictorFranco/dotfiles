@@ -45,6 +45,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 "explorer
 Plug 'scrooloose/nerdtree'
+"syntax highlighting
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 "-----------------------------------
