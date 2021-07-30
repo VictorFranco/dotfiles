@@ -1,9 +1,9 @@
 "    __  ___         _    ________  _______  ______
 "   /  |/  /_  __   | |  / /  _/  |/  / __ \/ ____/
-"  / /|_/ / / / /   | | / // // /|_/ / /_/ / /     
-" / /  / / /_/ /    | |/ // // /  / / _, _/ /___   
-"/_/  /_/\__, /     |___/___/_/  /_/_/ |_|\____/   
-"       /____/                                     
+"  / /|_/ / / / /   | | / // // /|_/ / /_/ / /
+" / /  / / /_/ /    | |/ // // /  / / _, _/ /___
+"/_/  /_/\__, /     |___/___/_/  /_/_/ |_|\____/
+"       /____/
 "
 
 syntax on
@@ -33,7 +33,7 @@ set ruler
 set foldmethod=marker
 
 "-----------------------------------
-"            Plugins
+"             Plugins
 "-----------------------------------
 call plug#begin("~/.vim/plugged")
 
@@ -53,7 +53,7 @@ call plug#end()
 "-----------------------------------
 
 "-----------------------------------
-"       plugin settings
+"         Plugin settings
 "-----------------------------------
 "theme
 let g:gruvbox_contrast_dark="hard"
@@ -64,4 +64,12 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
 "explorer
 let NERDTreeQuitOnOpen=1
+
+"-----------------------------------
+"          Mapping keys
+"-----------------------------------
+"vanilla maps
+noremap <silent> <space><space> /\s\+$<cr>
+noremap <silent> <space>no :%s/\s\+$//<cr>
+"explorer
 nmap <space>nt :NERDTreeFind<cr>
