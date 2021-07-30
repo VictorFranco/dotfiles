@@ -70,6 +70,10 @@ let NERDTreeQuitOnOpen=1
 "-----------------------------------
 "vanilla maps
 noremap <silent> <space><space> /\s\+$<cr>
-noremap <silent> <space>no :%s/\s\+$//<cr>
+noremap <silent> <space>rm :%s/\s\+$//<cr>
+noremap <silent> <space>hl :set hlsearch<cr>
+noremap <silent> <space>nhl :nohlsearch<cr>
+noremap <silent> <space>no :set number<cr>:set relativenumber<cr>
+noremap <silent> <space>nno :set nonumber<cr>:set norelativenumber<cr>
 "explorer
 nmap <space>nt :NERDTreeFind<cr>
