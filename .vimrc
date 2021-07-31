@@ -75,5 +75,23 @@ noremap <silent> <space>hl :set hlsearch<cr>
 noremap <silent> <space>nhl :nohlsearch<cr>
 noremap <silent> <space>no :set number<cr>:set relativenumber<cr>
 noremap <silent> <space>nno :set nonumber<cr>:set norelativenumber<cr>
+
+function! Compile(current_file)
+    if a:current_file=="c"
+        execute "w"
+        execute "!clear&&gcc %:p -o %:p:r&&%:p:h/./%:t:r"
+    endif
+    if a:current_file=="python"
+        execute "w"
+        execute "!clear&&python3 %:p"
+    endif
+    if a:current_file=="tex"
+        execute "w"
+        execute "!clear&&pdflatex %:p"
+    endif
+endfunction
+
+nnoremap <silent> <space>c :let current_file=&filetype<cr>:call Compile(current_file)<cr>
+
 "explorer
 nmap <space>nt :NERDTreeFind<cr>
