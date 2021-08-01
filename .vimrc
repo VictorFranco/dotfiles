@@ -49,6 +49,8 @@ Plug 'scrooloose/nerdtree'
 "syntax highlighting
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+"intellisense engine
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 "-----------------------------------
@@ -65,6 +67,10 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
 "explorer
 let NERDTreeQuitOnOpen=1
+"intellisense engine
+let g:coc_global_extensions=[ 'coc-tsserver', 'coc-rls', 'coc-clangd' ]
+"                                 js/ts         rust          c
+source ~/.vim/coc.vim
 
 "-----------------------------------
 "          Mapping keys
