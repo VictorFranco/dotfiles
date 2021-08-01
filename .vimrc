@@ -26,6 +26,7 @@ set incsearch
 "style settings
 set background=dark
 set t_Co=256
+set termguicolors
 "optional settings
 set cursorline
 set showcmd
