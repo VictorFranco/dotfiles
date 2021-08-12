@@ -96,6 +96,10 @@ function! Compile(current_file)
         execute "w"
         execute "!clear&&pdflatex %:p"
     endif
+    if a:current_file=="rust"
+        execute "w"
+        execute "!clear&&cargo run"
+    endif
 endfunction
 
 nnoremap <silent> <space>c :let current_file=&filetype<cr>:call Compile(current_file)<cr>
