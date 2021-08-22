@@ -49,6 +49,7 @@ Plug 'scrooloose/nerdtree'
 "syntax highlighting
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'lervag/vimtex'
 "intellisense engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
