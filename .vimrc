@@ -103,7 +103,7 @@ function! Compile(current_file)
     endif
 endfunction
 
-nnoremap <silent> <space>c :let current_file=&filetype<cr>:call Compile(current_file)<cr>
+nnoremap <silent> <space>c :let current_file=&filetype<cr>:!tput init<cr>:call Compile(current_file)<cr>
 
 "explorer
 nmap <space>nt :NERDTreeFind<cr>
