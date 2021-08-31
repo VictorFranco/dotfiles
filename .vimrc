@@ -101,6 +101,10 @@ function! Compile(current_file)
         execute "w"
         execute "!clear&&cargo run"
     endif
+    if a:current_file=="java"
+        execute "w"
+        execute "!clear&&javac %:p&&java -cp %:p:h %:t:r"
+    endif
 endfunction
 
 nnoremap <silent> <space>c :let current_file=&filetype<cr>:!tput init<cr>:call Compile(current_file)<cr>
