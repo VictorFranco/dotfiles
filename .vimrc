@@ -85,29 +85,20 @@ noremap <silent> <space>no :set number<cr>:set relativenumber<cr>
 noremap <silent> <space>nno :set nonumber<cr>:set norelativenumber<cr>
 
 function! Compile(current_file)
-    if a:current_file=="c"
-        execute "w"
-        execute "!clear&&gcc %:p -o %:p:r&&%:p:h/./%:t:r"
-    endif
-    if a:current_file=="python"
-        execute "w"
-        execute "!clear&&python3 %:p"
-    endif
-    if a:current_file=="tex"
-        execute "w"
-        execute "!clear&&pdflatex %:p"
-    endif
-    if a:current_file=="rust"
-        execute "w"
-        execute "!clear&&cargo run"
-    endif
-    if a:current_file=="java"
-        execute "w"
-        execute "!clear&&javac %:p&&java -cp %:p:h %:t:r"
-    endif
+    execute "w"
+    let command = ""
+
+    if a:current_file == "c"      |let command = "gcc %:p -o %:p:r&&%:p:h/./%:t:r" |endif
+    if a:current_file == "python" |let command = "python3 %:p"                     |endif
+    if a:current_file == "tex"    |let command = "pdflatex %:p"                    |endif
+    if a:current_file == "rust"   |let command = "cargo run"                       |endif
+    if a:current_file == "java"   |let command = "javac %:p&&java -cp %:p:h %:t:r" |endif
+
+    if command != "" | execute "!tput init && clear && " . command | endif
+
 endfunction
 
-nnoremap <silent> <space>c :let current_file=&filetype<cr>:!tput init<cr>:call Compile(current_file)<cr>
+nnoremap <silent> <space>c :let current_file=&filetype<cr>:call Compile(current_file)<cr>
 
 "explorer
 nmap <space>nt :NERDTreeFind<cr>
