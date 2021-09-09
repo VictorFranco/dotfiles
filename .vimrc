@@ -52,6 +52,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'lervag/vimtex'
 "intellisense engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"support for expanding abbreviations
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 "-----------------------------------
