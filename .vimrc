@@ -44,6 +44,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 "git support
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 "explorer
 Plug 'scrooloose/nerdtree'
 "syntax highlighting
