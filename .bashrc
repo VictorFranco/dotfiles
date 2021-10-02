@@ -133,5 +133,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-. "$HOME/.cargo/env"
+source ~/.profile
