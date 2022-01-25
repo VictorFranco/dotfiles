@@ -183,7 +183,13 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command exec ~/.config/i3/bar.sh
+        i3bar_command i3bar --transparency
         position top
+        height 20
+        font pango:HackNerdFont 12
+        colors {
+                background #00000033
+        }
 }
 
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper
