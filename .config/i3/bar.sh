@@ -1,19 +1,16 @@
 #!/bin/bash
 ram_ () {
-    used_ram=$(free -h|awk 'FNR == 2 {print $3}'|sed 's/i//')
-    echo "RAM $used_ram"
+    used_ram=$(free -h|cut -d ' ' -f 19|tr -d '\n')
+    echo "RAM ${used_ram%%i*}"
 }
 
 volume_icon () {
-    mute_state=$(amixer sget Master|grep %|awk '{print $NF}'|tr -d '[]')
-    case $mute_state in
-        "on")  echo " ";;
-        "off") echo "🔇";;
-    esac
+    mute_state=$(amixer sget Master|grep -o "\[\(on\|off\)\]")
+    [ ${mute_state:1:-1} = "on" ]&&echo " "||echo "🔇"
 }
 
 volume_value () {
-    amixer sget Master|grep %|awk '{print $4}'|tr -d '[]'
+    amixer sget Master|grep -o "[0-9]*%"
 }
 
 date_ () {
