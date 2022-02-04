@@ -5,7 +5,10 @@
 These are my dotfiles
 
 Toolset:
-* <a title="sudo apt install zsh" style="cursor:pointer">zsh</a>
+* [i3wm](https://i3wm.org "i3wm")
+* [lynx](https://lynx.invisible-island.net "lynx")
 * [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh "Oh My Zsh")
 * [powerlevel10k](https://github.com/romkatv/powerlevel10k "powerlevel10k")
-* <a title="sudo apt install tmux" style="cursor:pointer">tmux</a>
+* [tmux](https://github.com/tmux/tmux/wiki "tmux")
+* [vim](https://www.vim.org "vim")
+* [zsh](https://www.zsh.org "zsh")
