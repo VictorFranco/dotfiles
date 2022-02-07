@@ -59,6 +59,8 @@ Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "support for expanding abbreviations
 Plug 'mattn/emmet-vim'
+"man pages
+Plug 'vim-utils/vim-man'
 
 call plug#end()
 "-----------------------------------
@@ -109,3 +111,6 @@ nnoremap <silent> <space>c :let current_file=&filetype<cr>:call Compile(current_
 
 "explorer
 nmap <space>nt :NERDTreeFind<cr>
+"man pages
+nmap <space>k <Plug>(Man)
+nmap <space>v <Plug>(Vman)
