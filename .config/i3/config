@@ -196,3 +196,4 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper
 exec_always picom -b
 gaps inner 40
 gaps outer 10
+bindsym $mod+p exec scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png
