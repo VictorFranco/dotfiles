@@ -75,6 +75,9 @@ colorscheme gruvbox
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
+"vim-gitgutter
+set signcolumn=yes
+hi SignColumn guibg=Black
 "explorer
 let NERDTreeQuitOnOpen=1
 "intellisense engine
