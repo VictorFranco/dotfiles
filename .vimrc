@@ -106,7 +106,7 @@ function! Compile(current_file)
     if a:current_file == "rust"   |let command = "cargo run"                       |endif
     if a:current_file == "java"   |let command = "javac %:p&&java -cp %:p:h %:t:r" |endif
 
-    if command != "" | execute "!tput init && clear && " . command | endif
+    if command != "" | execute "!tput reset && clear && " . command | endif
 
 endfunction
 
