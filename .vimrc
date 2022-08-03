@@ -55,6 +55,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'lervag/vimtex'
+Plug 'vim-python/python-syntax'
 "intellisense engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "support for expanding abbreviations
@@ -80,6 +81,8 @@ set signcolumn=yes
 hi SignColumn guibg=Black
 "explorer
 let NERDTreeQuitOnOpen=1
+"python
+let g:python_highlight_all = 1
 "intellisense engine
 let g:coc_global_extensions=[ 'coc-tsserver', 'coc-rls', 'coc-clangd' ]
 "                                 js/ts         rust          c
