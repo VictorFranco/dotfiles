@@ -15,3 +15,4 @@ export LIBGL_ALWAYS_SOFTWARE
 setxkbmap latam
 LANG="en_US.UTF-8"
 export LANG
+export PATH=$HOME/.local/bin:$PATH
