@@ -197,3 +197,6 @@ exec_always picom -b
 gaps inner 40
 gaps outer 10
 bindsym $mod+p exec scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png
+
+default_border pixel 1
+default_floating_border pixel 1
