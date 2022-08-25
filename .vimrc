@@ -55,6 +55,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'lervag/vimtex'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'vim-python/python-syntax'
 "intellisense engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
