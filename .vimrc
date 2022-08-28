@@ -73,10 +73,18 @@ call plug#end()
 "theme
 let g:gruvbox_contrast_dark="hard"
 colorscheme gruvbox
+highlight Normal guibg=NONE ctermbg=NONE
+highlight CursorLine guibg=#1d2021
+highlight CursorLineNR guibg=#1d2021
 "statusline
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
+let g:airline_theme='dark'
+highlight! airline_tabfill guibg=black ctermbg=black
+highlight! airline_tab guibg=#171742 guifg=white ctermbg=black
+au VimEnter * highlight! airline_tabfill guibg=black ctermbg=black
+au VimEnter * highlight! airline_tab guibg=#171742 guifg=white ctermbg=black
 "vim-gitgutter
 set signcolumn=yes
 hi SignColumn guibg=Black
