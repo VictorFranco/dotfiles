@@ -6,7 +6,6 @@
 #       /____/
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
-. "$HOME/.cargo/env"
 
 alias lynx='lynx -cfg=$HOME/.config/lynx/lynx.cfg -lss=$HOME/.config/lynx/lynx.lss'
 
