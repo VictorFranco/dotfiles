@@ -93,8 +93,8 @@ let NERDTreeQuitOnOpen=1
 "python
 let g:python_highlight_all = 1
 "intellisense engine
-let g:coc_global_extensions=[ 'coc-tsserver', 'coc-rls', 'coc-clangd' ]
-"                                 js/ts         rust          c
+let g:coc_global_extensions=[ 'coc-tsserver', 'coc-rust-analyzer', 'coc-clangd' ]
+"                                 js/ts              rust                c
 source ~/.vim/coc.vim
 
 "-----------------------------------
