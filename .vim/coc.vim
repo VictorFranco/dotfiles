@@ -56,4 +56,4 @@ endfunction
 
 hi Pmenu guibg=#000000 gui=NONE
 hi Pmenu ctermbg=black ctermfg=white
-hi PmenuSel guifg=#000000 gui=NONE
+hi PmenuSel guibg=#1d2021
