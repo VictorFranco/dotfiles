@@ -185,15 +185,15 @@ bar {
         status_command exec ~/.config/i3/bar.sh
         i3bar_command i3bar --transparency
         position top
-        height 20
-        font pango:HackNerdFont 12
+        height 25
+        font pango:HackNerdFont 14
         colors {
                 background #00000033
         }
 }
 
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper
-exec_always picom -b
+exec_always picom -b --config ~/.config/picom/picom.conf
 gaps inner 40
 gaps outer 10
 bindsym $mod+p exec scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png
