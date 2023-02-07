@@ -1,4 +1,4 @@
-# Holy Grial
+# Holy Grail
 
 ![](https://img.shields.io/badge/linux-282F35?style=for-the-badge&logo=linux&logoColor=white&labelColor=101010)
 
