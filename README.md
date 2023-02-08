@@ -12,3 +12,6 @@ Toolset:
 * [tmux](https://github.com/tmux/tmux/wiki "tmux")
 * [vim](https://www.vim.org "vim")
 * [zsh](https://www.zsh.org "zsh")
+
+## LICENSE
+[GPLv3.0](LICENSE)
