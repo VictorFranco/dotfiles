@@ -34,6 +34,9 @@ set cursorline
 set showcmd
 set ruler
 set foldmethod=marker
+"allow project specific vimrc
+set exrc
+set secure
 
 "-----------------------------------
 "             Plugins
