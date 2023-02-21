@@ -105,8 +105,8 @@ noremap <silent> <space><space> /\s\+$<cr>
 noremap <silent> <space>rm :%s/\s\+$//<cr>
 noremap <silent> <space>hl :set hlsearch<cr>
 noremap <silent> <space>nhl :nohlsearch<cr>
-noremap <silent> <space>no :set number<cr>:set relativenumber<cr>
-noremap <silent> <space>nno :set nonumber<cr>:set norelativenumber<cr>
+noremap <silent> <space>no :set number<cr>:set relativenumber<cr>:set signcolumn=yes<cr>
+noremap <silent> <space>nno :set nonumber<cr>:set norelativenumber<cr>:set signcolumn=no<cr>
 
 function! Compile(current_file)
     execute "w"
