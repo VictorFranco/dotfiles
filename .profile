@@ -11,7 +11,6 @@ alias lynx='lynx -cfg=$HOME/.config/lynx/lynx.cfg -lss=$HOME/.config/lynx/lynx.l
 
 LIBGL_ALWAYS_SOFTWARE=1
 export LIBGL_ALWAYS_SOFTWARE
-setxkbmap latam
 LANG="en_US.UTF-8"
 export LANG
 export PATH=$HOME/.local/bin:$PATH

@@ -197,6 +197,8 @@ exec_always picom -b --config ~/.config/picom/picom.conf
 gaps inner 40
 gaps outer 10
 bindsym $mod+p exec scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png
+bindsym $mod+Control+u exec setxkbmap us
+bindsym $mod+Control+l exec setxkbmap latam
 
 default_border pixel 1
 default_floating_border pixel 1
