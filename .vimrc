@@ -104,12 +104,12 @@ source ~/.vim/coc.vim
 "          Mapping keys
 "-----------------------------------
 "vanilla maps
-noremap <silent> <space><space> /\s\+$<cr>
-noremap <silent> <space>rm :%s/\s\+$//<cr>
-noremap <silent> <space>hl :set hlsearch<cr>
-noremap <silent> <space>nhl :nohlsearch<cr>
-noremap <silent> <space>no :set number<cr>:set relativenumber<cr>:set signcolumn=yes<cr>
-noremap <silent> <space>nno :set nonumber<cr>:set norelativenumber<cr>:set signcolumn=no<cr>
+noremap <silent> <leader><space> /\s\+$<cr>
+noremap <silent> <leader>rm :%s/\s\+$//<cr>
+noremap <silent> <leader>hl :set hlsearch<cr>
+noremap <silent> <leader>nhl :nohlsearch<cr>
+noremap <silent> <leader>no :set number<cr>:set relativenumber<cr>:set signcolumn=yes<cr>
+noremap <silent> <leader>nno :set nonumber<cr>:set norelativenumber<cr>:set signcolumn=no<cr>
 
 function! Compile(current_file)
     execute "w"
@@ -125,10 +125,10 @@ function! Compile(current_file)
 
 endfunction
 
-nnoremap <silent> <space>c :let current_file=&filetype<cr>:call Compile(current_file)<cr>
+nnoremap <silent> <leader>c :let current_file=&filetype<cr>:call Compile(current_file)<cr>
 
 "explorer
-nmap <space>nt :NERDTreeFind<cr>
+nmap <leader>nt :NERDTreeFind<cr>
 "man pages
-nmap <space>k <Plug>(Man)
-nmap <space>v <Plug>(Vman)
+nmap <leader>k <Plug>(Man)
+nmap <leader>v <Plug>(Vman)
