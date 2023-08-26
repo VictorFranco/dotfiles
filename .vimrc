@@ -50,6 +50,7 @@ Plug 'vim-airline/vim-airline'
 "git support
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'github/copilot.vim'
 "explorer
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
